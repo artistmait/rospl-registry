@@ -1,0 +1,59 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "sub-components",
+  "homepage": "https://localhost:3000",
+  "items": [
+    {
+      "name": "navbar",
+      "type": "registry:block",
+      "title": "Navbar",
+      "description": "A nice navbar",
+      "files": [
+        {
+          "path": "src/registry/neutral/blocks/navbar.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "table",
+      "type": "registry:block",
+      "title": "Table",
+      "description": "A nice Table",
+      "files": [
+        {
+          "path": "src/registry/neutral/blocks/DataTable.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "date-picker",
+      "type": "registry:block",
+      "title": "Date Picker",
+      "description": "A nice Date Picker",
+      "files": [
+        {
+          "path": "src/registry/neutral/blocks/DatePicker.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "dependencies": ["lucide-react", "framer-motion","date-fns"]
+    },
+    {
+      "name": "line-chart",
+      "type": "registry:block",
+      "title": "Line Chart",
+      "description": "A nice Line Chart",
+      "files": [
+        {
+          "path": "src/registry/neutral/blocks/LineChart.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "dependencies": ["recharts"]
+    }
+  ]
+}
