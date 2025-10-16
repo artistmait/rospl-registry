@@ -86,7 +86,7 @@ export default function Block1Page() {
           <CardContent className="p-6">
             <h3 className="text-lg font-semibold mb-4">Preview</h3>
             <div className="border rounded-md p-4 text-center bg-muted/40">
-              <p className="text-sm text-muted-foreground">
+              {/* <p className="text-sm text-muted-foreground"> */}
                 <Navbar
                   items={[
                     { label: "Home", href: "/" },
@@ -94,7 +94,7 @@ export default function Block1Page() {
                     { label: "Contact", href: "/contact" },
                   ]}
                 />
-              </p>
+              {/* </p> */}
             </div>
           </CardContent>
         </Card>

@@ -35,7 +35,7 @@ export default function Table<T extends Record<string, any>>({
   const [page, setPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(defaultItemsPerPage);
 
-  // 🔍 Filtering
+  //Filtering
   const filteredData = useMemo(() => {
     if (!search.trim()) return data;
     return data.filter((row) =>
@@ -45,7 +45,7 @@ export default function Table<T extends Record<string, any>>({
     );
   }, [data, search]);
 
-  // 🔽 Sorting
+  //Sorting
   const sortedData = useMemo(() => {
     if (!sortConfig.key) return filteredData;
     return [...filteredData].sort((a, b) => {
